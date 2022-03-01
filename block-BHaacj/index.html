@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="flex container header">
+    <div class="logo flex">
+      <div><img src="./assets/logo.png" alt=""></div>
+      <div>
+        <h1>JOURNEY</h1>
+      </div>
+    </div>
+    <nav class="nav-bar">
+      <ul class="flex">
+        <li>
+          <a class="active nav-a" href="#">Home</a>
+        </li>
+        <li>
+          <a class="nav-a" href="#">Top Destinations</a>
+        </li>
+        <li>
+          <a class="nav-a" href="#">Recommended Places</a>
+        </li>
+        <li>
+          <a class="nav-a" href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero flex container">
+      <div class="hero-text flex">
+        <h1>LET'S BEGIN</h1>
+        <img src="./assets/dots-3.png" alt="">
+        <p>We assist you to choose the best.</p>
+        <img class="down-arrow" src="./assets/down.svg" alt="">
+      </div>
+      <form class='form flex' action="index.html" method="none">
+        <fieldset class="left-form">
+          <label for="choose">
+            Choose your Destination
+            <input type="text" id="choose" placeholder="Type your Destination">
+          </label>
+          <div class="flex dates">
+            <label for="in-date">
+              Check In Date
+              <input type="text" id="in-date" placeholder="Check In">
+            </label>
+            <label for="out-date">
+              Check Out Date
+              <input type="text" id="out-date" placeholder="Check Out">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="right-form flex">
+          <label for="room-count">
+            How many rooms?
+            <select name="rooms" id="room-count">
+              <option value="rooms">1 Room</option>
+              <option value="rooms">2 Room</option>
+              <option value="rooms">3 Room</option>
+              <option value="rooms">4 Room</option>
+            </select>
+          </label>
+          <label for="adult-count">
+            Adults
+            <select name="adult" id="adult-count">
+              <option value="adult">1 Adult</option>
+              <option value="adult">2 Adult</option>
+              <option value="adult">3 Adult</option>
+              <option value="adult">4 Adult</option>
+            </select>
+          </label>
+          <label for="children-count">
+            Children
+            <select name="children" id="children-count">
+              <option value="children">1 child</option>
+              <option value="children">2 children</option>
+              <option value="children">3 children</option>
+              <option value="children">4 children</option>
+            </select>
+          </label>
+          <button class="btn">Check Availablity</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
